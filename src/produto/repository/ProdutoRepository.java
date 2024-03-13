@@ -7,7 +7,7 @@ public interface ProdutoRepository {
 	public void cadastrar(Produto produto);
 	public void atualizar(Produto produto);
 	public void visualizar();
-	public void deletar(int cod );
+	public void deletar(int codigo );
 	public void retirar(int quanti);
 
 }
