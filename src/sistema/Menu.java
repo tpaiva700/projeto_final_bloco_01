@@ -3,6 +3,8 @@ package sistema;
 import java.util.Scanner;
 
 import cor.Colors;
+import produto.model.Manga;
+import produto.model.Produto;
 
 public class Menu {
 
@@ -17,20 +19,21 @@ public class Menu {
 		System.out.println(Colors.TEXT_GREEN + Colors.ANSI_BLACK_BACKGROUND + 
 				"*--------------------------------------------------*");
 		System.out.println("*					           *");
-		System.out.println("*		The Mangás Store!		   * ");
+		System.out.println("*		The Mangás Store!	   	   * ");
 		System.out.println("*					           *");
 		System.out.println("*--------------------------------------------------*");
-		System.out.println("     1 - Criar Produto 				   *");
+		System.out.println("     1 - Cadastrar Produto 			   *");
 		System.out.println("     2 - Listar Produtos 			   *");
 		System.out.println("     3 - Atualizar Produto 			   *");
 		System.out.println("     4 - Excluir Produto 			   *");
-		System.out.println("     5 - Sair do Menu 			   	   *");
+		System.out.println("     5 - Retirar Produto 			   *");
+		System.out.println("     6 - Sair do Menu 			   	   *");
 		System.out.println("*--------------------------------------------------*");
 		System.out.println("  Informe o que deseja fazer: 			   *");
 		System.out.println("*--------------------------------------------------*");
 		opcao = sc.nextInt();	
 		
-		if(opcao == 5) {
+		if(opcao == 6) {
 			System.out.println(Colors.TEXT_GREEN_BOLD +"A Liberdade bem perto de sua Casa!!");
 			rodape();
 			sc.close();	
@@ -53,6 +56,10 @@ public class Menu {
 			
 		case 4 : 
 			System.out.println("Excluir Produto");
+			break;
+			
+		case 5 : 
+			System.out.println("Retirar Produto");
 			break;
 			
 			default: 
